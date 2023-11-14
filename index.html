@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css">
+    <title>TMDB Movie Recommender</title>
+</head>
+<body>
+    <main>
+        <div class="title-div">
+    <h1 class="title">TMDB Movie Recommender</h1>
+        </div>
+
+        <section class="main-info">
+<form id="form-main">
+    <section class="form-container">
+        
+    <div><label for="genre">What genre would you like to watch?</label><br>
+        <input type="text" placeholder="Action, comedy, romance, horror, etc." id="genre"></input></div>
+    <div><label for="language">Choose a language:</label><br>
+        <input type="text" placeholder="English = en, Spanish = es, Korean = ko" id="language"></input></div>
+    <div><label for="release-min">What is the earliest release year?</label><br>
+        <input type="number" placeholder="YYYY" id="release-min"></input></div>
+    <div><label for="release-max">What is the latest release year?</label><br>
+        <input type="number" placeholder="YYYY" id="release-max"></input></div>
+    <div><label for="user-score">What minimum rating do you prefer?</label><br>
+        <input type="text" placeholder="Value out of 10" id="user-score"></input></div>
+        <input type="submit" class="submit"></input>
+        <button class="clear"><a href="javascript:window.location.reload(true)">Try another search</a></button>
+        <!-- <button id="next">Next page</button> -->
+    </section>
+</form>
+
+<section class="results">
+    <h1 class="top-result">Top Result</h1>
+    <h2 class="movieTitle"></h2>
+    <img class="poster"></img>
+    <p class="overview"></p>
+
+    <!-- <div class="pagination">
+        <div class="page disabled" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+    </div> -->
+</section>
+<section class="list">
+    <ul> </ul>
+    
+    </section>
+</section>
+
+</main>
+    <script src="main.js"></script>
+</body>
+</html>
